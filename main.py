@@ -131,10 +131,10 @@ while True:
         else:
             # Maths
             correctAnswers = list(filter(lambda answer: bool(answer['correct']), answers))
-            correctPercentage = floor((len(correctAnswers) / len(answers)) * 100) 
+            correctPercentage = floor((len(correctAnswers) / answerCount) * 100) 
 
             # Output
-            print(f"Out of {len(answers)} answers, {correctPercentage}% were correct!\nPress enter to continue...")
+            print(f"Out of {answerCount} answers, {correctPercentage}% were correct!\nPress enter to continue...")
 
         #
         input()
